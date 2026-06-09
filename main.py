@@ -91,5 +91,5 @@ async def rag_query_pdf_ai(ctx: inngest.Context):
     
 app = FastAPI()
 
-inngest.fast_api.serve(app, inngest_client,  [rag_ingest_pdf])
+inngest.fast_api.serve(app, inngest_client,  [rag_ingest_pdf, rag_query_pdf_ai])
 
